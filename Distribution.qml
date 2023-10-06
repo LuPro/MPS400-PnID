@@ -3,12 +3,12 @@ import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
 import QtQuick.Shapes 1.15
 import org.kde.kirigami 2.20 as Kirigami
-import "../pnid_elements"
-import "../components"
+import "ui/pnid_elements"
+import "ui/components"
 
 Controls.ScrollView {
     id: pnid
-    objectName: "pnidTest"
+    objectName: "Distribution"
 
     Controls.ScrollBar.horizontal.policy: Controls.ScrollBar.AsNeeded
     Controls.ScrollBar.vertical.policy: Controls.ScrollBar.AsNeeded
@@ -38,13 +38,13 @@ Controls.ScrollView {
             labelPosition: "top"
             unit: "#"
         }
-        MagazineEjector { //TODO: All magazine ejectors are "backwards" -> 1 is seen as full, but is provided by "slideEmpty"
-            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine1/4:SlideEmpty"
+        MagazineEjector {
+            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine1/4:SlideExtended"
             displayName: "Magazine 1 Ejector"
             x: 1300
             y: 1500
             subObjectIds: [
-                "4:01_Distribution/4:Indicators/4:Elements/4:Magazine1/4:SlideExtended",
+                "4:01_Distribution/4:Indicators/4:Elements/4:Magazine1/4:SlideEmpty",
                 "4:01_Distribution/4:Indicators/4:Elements/4:Magazine1/4:ExtendSlide",
                 "4:01_Distribution/4:Indicators/4:Elements/4:Magazine1/4:SlideRetracted"
             ]
@@ -61,12 +61,12 @@ Controls.ScrollView {
             unit: "#"
         }
         MagazineEjector {
-            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:SlideEmpty"
+            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:SlideExtended"
             displayName: "Magazine 2 Ejector"
             x: 3000
             y: 1500
             subObjectIds: [
-                "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:SlideExtended",
+                "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:SlideEmpty",
                 "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:ExtendSlide",
                 "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:SlideRetracted"
             ]
@@ -83,12 +83,12 @@ Controls.ScrollView {
             unit: "#"
         }
         MagazineEjector {
-            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:SlideEmpty"
+            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:SlideExtended"
             displayName: "Magazine 3 Ejector"
             x: 4700
             y: 1500
             subObjectIds: [
-                "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:SlideExtended",
+                "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:SlideEmpty",
                 "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:ExtendSlide",
                 "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:SlideRetracted"
             ]
@@ -119,6 +119,7 @@ Controls.ScrollView {
             displayName: "Lightbarrier Start"
             x: 7800
             y: 1900
+            activeLow: true
         }
 
         //TODO: Change the display names for the Leds to be more informative
@@ -235,6 +236,13 @@ Controls.ScrollView {
                     y: 100
                 }
             }
+        }
+
+        RfidReadWrite {
+            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:RFID"
+            displayName: "RFID"
+            x: 7100
+            y: 1200
         }
     }
 }
