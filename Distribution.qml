@@ -31,7 +31,7 @@ Controls.ScrollView {
         Container {
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine1/4:FillLevelCalculated"
             displayName: "Magazine 1"
-            x: 2000
+            x: 1700
             y: 500
             maxValue: 6
             label: "Discs Red"
@@ -41,7 +41,7 @@ Controls.ScrollView {
         MagazineEjector {
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine1/4:SlideExtended"
             displayName: "Magazine 1 Ejector"
-            x: 1300
+            x: 1000
             y: 1500
             subObjectIds: [
                 "4:01_Distribution/4:Indicators/4:Elements/4:Magazine1/4:SlideEmpty",
@@ -53,7 +53,7 @@ Controls.ScrollView {
         Container {
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:FillLevelCalculated"
             displayName: "Magazine 1"
-            x: 3700
+            x: 3400
             y: 500
             maxValue: 6
             label: "Discs Black"
@@ -63,7 +63,7 @@ Controls.ScrollView {
         MagazineEjector {
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:SlideExtended"
             displayName: "Magazine 2 Ejector"
-            x: 3000
+            x: 2700
             y: 1500
             subObjectIds: [
                 "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:SlideEmpty",
@@ -75,7 +75,7 @@ Controls.ScrollView {
         Container {
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:FillLevelCalculated"
             displayName: "Magazine 1"
-            x: 5400
+            x: 5100
             y: 500
             maxValue: 6
             label: "Discs Metal"
@@ -85,7 +85,7 @@ Controls.ScrollView {
         MagazineEjector {
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:SlideExtended"
             displayName: "Magazine 3 Ejector"
-            x: 4700
+            x: 4400
             y: 1500
             subObjectIds: [
                 "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:SlideEmpty",
@@ -96,28 +96,28 @@ Controls.ScrollView {
 
         GasBottle {
             disablePopup: true
-            x: 6400
+            x: 6100
             y: 500
             label: "Air"
         }
 
         LightBarrier {
-            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:LightBarriers/4:Start"
+            objectName: "2:MyObject/2:MyVariable1"//"4:01_Distribution/4:Indicators/4:Elements/4:LightBarriers/4:Start"
             displayName: "Lightbarrier Start"
-            x: 1000
+            x: 700
             y: 1900
         }
         LightBarrier {
             //TODO: I think this objectName may be wrong
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:LightBarriers/4:BeforeRFID"
-            displayName: "Lightbarrier Start"
-            x: 6800
+            displayName: "Lightbarrier Before RFID"
+            x: 6500
             y: 1900
         }
         LightBarrier {
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:LightBarriers/4:End"
-            displayName: "Lightbarrier Start"
-            x: 7800
+            displayName: "Lightbarrier End"
+            x: 7500
             y: 1900
             activeLow: true
         }
@@ -126,7 +126,7 @@ Controls.ScrollView {
         Led {
             objectName: "4:01_Distribution/4:Indicators/4:Lights/4:Red"
             displayName: "Red"
-            x: 500
+            x: 200
             y: 500
             label: displayName
             onColor: "#de2a12"
@@ -134,7 +134,7 @@ Controls.ScrollView {
         Led {
             objectName: "4:01_Distribution/4:Indicators/4:Lights/4:Yellow"
             displayName: "Yellow"
-            x: 500
+            x: 200
             y: 900
             label: displayName
             onColor: "#edbf05"
@@ -142,20 +142,27 @@ Controls.ScrollView {
         Led {
             objectName: "4:01_Distribution/4:Indicators/4:Lights/4:Green"
             displayName: "Green"
-            x: 500
+            x: 200
             y: 1300
             label: displayName
             onColor: "#1e9e22"
         }
 
         Motor {
-            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Conveyor/4:ConveyorForward"
+            objectName: "2:MyObject/2:MyVariable2"//"4:01_Distribution/4:Indicators/4:Elements/4:Conveyor/4:ConveyorForward"
             displayName: "Conveyor"
-            x: 400
+            x: 100
             y: 2150
-            subObjectIds: [
+            /*subObjectIds: [
                 "4:01_Distribution/4:Indicators/4:Elements/4:Conveyor/4:ConveyorBackward"
-            ]
+            ]*/
+        }
+
+        RfidReadWrite {
+            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:RFID"
+            displayName: "RFID"
+            x: 6800
+            y: 1500
         }
 
 
@@ -167,7 +174,7 @@ Controls.ScrollView {
                 strokeStyle: ShapePath.SolidLine
                 fillColor: "transparent"
 
-                startX: 700; startY: 2300
+                startX: 400; startY: 2300
                 PathLine {
                     x: 8000
                     y: 2300
@@ -182,21 +189,21 @@ Controls.ScrollView {
                 strokeStyle: ShapePath.SolidLine
                 fillColor: "transparent"
 
-                startX: 1300; startY: 1650
+                startX: 1000; startY: 1650
                 PathLine {
-                    x: 1100
+                    x: 800
                     y: 1650
                 }
                 PathLine {
-                    x: 1100
+                    x: 800
                     y: 100
                 }
                 PathLine {
-                    x: 6600
+                    x: 6300
                     y: 100
                 }
                 PathLine {
-                    x: 6600
+                    x: 6300
                     y: 500
                 }
             }
@@ -208,13 +215,13 @@ Controls.ScrollView {
                 strokeStyle: ShapePath.SolidLine
                 fillColor: "transparent"
 
-                startX: 3000; startY: 1650
+                startX: 2700; startY: 1650
                 PathLine {
-                    x: 2800
+                    x: 2500
                     y: 1650
                 }
                 PathLine {
-                    x: 2800
+                    x: 2500
                     y: 100
                 }
             }
@@ -226,23 +233,16 @@ Controls.ScrollView {
                 strokeStyle: ShapePath.SolidLine
                 fillColor: "transparent"
 
-                startX: 4700; startY: 1650
+                startX: 4400; startY: 1650
                 PathLine {
-                    x: 4500
+                    x: 4200
                     y: 1650
                 }
                 PathLine {
-                    x: 4500
+                    x: 4200
                     y: 100
                 }
             }
-        }
-
-        RfidReadWrite {
-            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:RFID"
-            displayName: "RFID"
-            x: 7100
-            y: 1200
         }
     }
 }
