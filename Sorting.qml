@@ -37,7 +37,7 @@ Controls.ScrollView {
 
                 startX: 400; startY: 2300
                 PathLine {
-                    x: 5350
+                    x: 3550
                     y: 2300
                 }
 
@@ -49,9 +49,9 @@ Controls.ScrollView {
                 strokeStyle: ShapePath.SolidLine
                 fillColor: "transparent"
 
-                startX: 5850; startY: 2300
+                startX: 4050; startY: 2300
                 PathLine {
-                    x: 6350
+                    x: 4550
                     y: 2300
                 }
             }
@@ -62,9 +62,9 @@ Controls.ScrollView {
                 strokeStyle: ShapePath.SolidLine
                 fillColor: "transparent"
 
-                startX: 6850; startY: 2300
+                startX: 5050; startY: 2300
                 PathLine {
-                    x: 8000
+                    x: 6000
                     y: 2300
                 }
             }
@@ -77,25 +77,25 @@ Controls.ScrollView {
                 dashPattern: [2, 4]
                 fillColor: "transparent"
 
-                startX: 2700; startY: 1650
+                startX: 1700; startY: 1650
                 PathLine {
-                    x: 4250; y: 1650
+                    x: 3250; y: 1650
                 }
                 PathLine {
-                    x: 4250; y: 3100
+                    x: 3250; y: 3100
                 }
                 PathLine {
-                    x: 2700; y: 3100
+                    x: 1700; y: 3100
                 }
                 PathLine {
-                    x: 2700; y: 1650
+                    x: 1700; y: 1650
                 }
             }
         }
 
         PnidUiLabel {
             text: "Color Sensor"
-            x: 3100
+            x: 2100
             y: 1400
             size: "large"
             labelColor: Kirigami.Theme.activeTextColor
@@ -104,7 +104,7 @@ Controls.ScrollView {
         Container {
             objectName: "undefined"
             displayName: "Product Storage 1"
-            x: 5600
+            x: 3800
             y: 1000
             maxValue: 1
             label: "Storage 1"
@@ -114,14 +114,14 @@ Controls.ScrollView {
         Switch {
             objectName: "4:04_Sorting/4:Indicators/4:Modules/4:Slides/4:DeflectingIntoSlide1"
             displayName: "Deflector 1"
-            x: 5350
+            x: 3550
             y: 2000
         }
 
         Container {
             objectName: "undefined2"
             displayName: "Product Storage 2"
-            x: 6600
+            x: 4800
             y: 1000
             maxValue: 1
             label: "Storage 2"
@@ -131,27 +131,27 @@ Controls.ScrollView {
         Switch {
             objectName: "4:04_Sorting/4:Indicators/4:Modules/4:Slides/4:DeflectingIntoSlide2"
             displayName: "Deflector 2"
-            x: 6350
+            x: 4550
             y: 2000
         }
 
         LightBarrier {
             objectName: "4:04_Sorting/4:Indicators/4:Modules/4:LightBarrier/4:Start"
             displayName: "Lightbarrier Start"
-            x: 1500
+            x: 700
             y: 1900
         }
         LightBarrier {
             objectName: "4:04_Sorting/4:Indicators/4:Modules/4:LightBarrier/4:ColourSensor"
             displayName: "Lightbarrier Color Sensor"
-            x: 3100
+            x: 2100
             y: 1900
         }
         ReflectivitySensor {
             objectName: "4:04_Sorting/4:Indicators/4:Modules/4:ColourDetection/4:ReflectiveLightSensor"
             displayName: "Reflectivity Sensor"
             valuePosition: "top"
-            x: 3650
+            x: 2650
             y: 1900
         }
         ProximitySensor {
@@ -159,13 +159,13 @@ Controls.ScrollView {
             displayName: "Inductive Proximity Sensor"
             rotation: 2
             labelPosition: "bottom"
-            x: 3700
+            x: 2700
             y: 2350
         }
         LightBarrier {
             objectName: "4:04_Sorting/4:Indicators/4:Modules/4:LightBarrier/4:End"
             displayName: "Lightbarrier End"
-            x: 7500
+            x: 5500
             y: 1900
             activeLow: true
         }

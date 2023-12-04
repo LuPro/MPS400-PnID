@@ -126,10 +126,25 @@ Controls.ScrollView {
             ]
         }
 
+        PickAndPlace {
+            objectName: "2:MyObject/2:MyVariable1"//"4:03_Joining/4:Indicators/4:Modules/4:PickAndPlace/4:ArmExtended"
+            valuePosition: "none"
+            rotation: 1
+            x: 2350
+            y: 1600
+            subObjectIds: [
+                "2:MyObject/2:MyVariable2",//"4:03_Joining/4:Indicators/4:Modules/4:PickAndPlace/4:ArmRetracted",
+                "2:MyObject/2:MyVariable3",//"4:03_Joining/4:Indicators/4:Modules/4:PickAndPlace/4:SuctionCupDown",
+                "2:MyObject/2:MyVariable4",//"4:03_Joining/4:Indicators/4:Modules/4:PickAndPlace/4:SuctionCupIsUp",
+                "2:MyObject/2:MyVariable5",//"4:03_Joining/4:Indicators/4:Modules/4:PickAndPlace/4:VacuumOn",
+                "2:MyObject/2:MyVariable6"//"4:03_Joining/4:Indicators/4:Modules/4:PickAndPlace/4:WorkpiecePickedUp"
+            ]
+        }
+
         Barrier {
             objectName: "4:03_Joining/4:Indicators/4:Modules/4:Gate/4:CloseGate"
             displayName: "Gate"
-            x: 2600
+            x: 3000
             y: 1900
             subObjectIds: [
                 "4:03_Joining/4:Indicators/4:Modules/4:Gate/4:OpenGate"

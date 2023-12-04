@@ -52,7 +52,7 @@ Controls.ScrollView {
 
         Container {
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine2/4:FillLevelCalculated"
-            displayName: "Magazine 1"
+            displayName: "Magazine 2"
             x: 3400
             y: 500
             maxValue: 6
@@ -74,7 +74,7 @@ Controls.ScrollView {
 
         Container {
             objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Magazine3/4:FillLevelCalculated"
-            displayName: "Magazine 1"
+            displayName: "Magazine 3"
             x: 5100
             y: 500
             maxValue: 6
@@ -102,7 +102,7 @@ Controls.ScrollView {
         }
 
         LightBarrier {
-            objectName: "2:MyObject/2:MyVariable1"//"4:01_Distribution/4:Indicators/4:Elements/4:LightBarriers/4:Start"
+            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:LightBarriers/4:Start"
             displayName: "Lightbarrier Start"
             x: 700
             y: 1900
@@ -149,13 +149,13 @@ Controls.ScrollView {
         }
 
         Motor {
-            objectName: "2:MyObject/2:MyVariable2"//"4:01_Distribution/4:Indicators/4:Elements/4:Conveyor/4:ConveyorForward"
+            objectName: "4:01_Distribution/4:Indicators/4:Elements/4:Conveyor/4:ConveyorForward"
             displayName: "Conveyor"
             x: 100
             y: 2150
-            /*subObjectIds: [
+            subObjectIds: [
                 "4:01_Distribution/4:Indicators/4:Elements/4:Conveyor/4:ConveyorBackward"
-            ]*/
+            ]
         }
 
         RfidReadWrite {
