@@ -107,22 +107,22 @@ Controls.ScrollView {
         }
 
         Motor {
-            objectName: "4:03_Joining/4:Indicators/4:Elements/4:Conveyor/4:ConveyorForward"
+            objectName: "4:03_Joining/4:Indicators/4:Modules/4:Conveyor/4:ConveyorForward"
             displayName: "Conveyor"
             x: 100
             y: 2150
             subObjectIds: [
-                "4:03_Joining/4:Indicators/4:Elements/4:Conveyor/4:ConveyorBackward"
+                "4:03_Joining/4:Indicators/4:Modules/4:Conveyor/4:ConveyorBackward"
             ]
         }
         Motor {
-            objectName: "4:03_Joining/4:Indicators/4:Elements/4:Conveyor/4:unknown"
+            objectName: "4:03_Joining/4:Indicators/4:Modules/4:Conveyor/4:unknown"
             displayName: "Conveyor"
             valuePosition: "left"
             x: 2150
             y: 100
             subObjectIds: [
-                "4:03_Joining/4:Indicators/4:Elements/4:Conveyor/4:ConveyorBackward"
+                "4:03_Joining/4:Indicators/4:Elements/4:Modules/4:unknown"
             ]
         }
 
